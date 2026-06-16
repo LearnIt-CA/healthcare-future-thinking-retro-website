@@ -1,0 +1,982 @@
+/* HealthNet 2001 - Shared Stylesheet v2.1 */
+/* Optimized for Internet Explorer 6.0 and Netscape Navigator 7   */
+/* Please set your screen resolution to 800x600 or higher         */
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-color: #AAAAAA;
+    color: #000000;
+    margin: 0;
+    padding: 4px 0;
+}
+
+a:link    { color: #0000CC; }
+a:visited { color: #663399; }
+a:hover   { color: #CC0000; }
+a:active  { color: #FF0000; }
+
+td, th { font-size: 11px; font-family: Verdana, Arial, sans-serif; }
+
+/* ─── MAIN WRAPPER ─────────────────────────────────────────────── */
+.main-container {
+    width: 780px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #666666;
+}
+
+/* ─── MASTHEAD ──────────────────────────────────────────────────── */
+.masthead-bg {
+    background-color: #003399;
+    width: 100%;
+}
+
+.site-title {
+    font-family: Arial Black, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+
+.site-tagline {
+    font-size: 10px;
+    color: #AACCFF;
+    font-style: italic;
+}
+
+/* ─── NAVIGATION ────────────────────────────────────────────────── */
+.nav-bar-bg {
+    background-color: #336699;
+    border-top: 2px solid #6699BB;
+    border-bottom: 2px solid #003366;
+}
+
+.nav-cell {
+    padding: 5px 13px;
+    border-right: 1px solid #4477AA;
+    white-space: nowrap;
+}
+
+.nav-cell a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.nav-cell a:hover { color: #FFFF00; }
+
+.nav-cell-active {
+    background-color: #FFFFFF;
+    padding: 5px 13px;
+    border-right: 1px solid #4477AA;
+    border-top: 2px solid #FFCC00;
+    white-space: nowrap;
+}
+
+.nav-cell-active span {
+    color: #003399;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+/* ─── SECTION HEADERS ───────────────────────────────────────────── */
+.section-hdr {
+    background-color: #336699;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 3px 6px;
+}
+
+.section-hdr-dark {
+    background-color: #003399;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 3px 6px;
+}
+
+/* ─── BUTTONS ───────────────────────────────────────────────────── */
+.btn {
+    background-color: #C0C0C0;
+    border: 2px outset #DDDDDD;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    padding: 2px 10px;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover { background-color: #D4D4D4; }
+
+.btn-blue {
+    background-color: #336699;
+    color: #FFFFFF;
+    border: 2px outset #4477AA;
+}
+
+.btn-orange {
+    background-color: #FF6600;
+    color: #FFFFFF;
+    border: 2px outset #FF8833;
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #C0C0C0;
+    border: 2px outset #DDDDDD;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.search-input {
+    border: 1px inset #999999;
+    font-size: 11px;
+    padding: 2px 4px;
+    width: 135px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* ─── CONTENT BOXES ─────────────────────────────────────────────── */
+.content-box {
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.sidebar-box {
+    border: 1px solid #336699;
+    background-color: #FFFFFF;
+    margin-bottom: 6px;
+}
+
+/* ─── HEADLINE / STORY STYLES ───────────────────────────────────── */
+.headline-main {
+    font-size: 15px;
+    font-weight: bold;
+    color: #003399;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+.headline-sub {
+    font-size: 12px;
+    font-weight: bold;
+    color: #003399;
+    font-family: Arial, sans-serif;
+}
+
+.story-date {
+    color: #666666;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.story-blurb {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.pull-quote {
+    font-size: 13px;
+    font-style: italic;
+    color: #003399;
+    border-left: 4px solid #336699;
+    padding: 6px 10px;
+    margin: 10px 15px;
+    background-color: #EEF4FF;
+    font-family: "Times New Roman", serif;
+}
+
+/* ─── DIVIDERS ──────────────────────────────────────────────────── */
+hr.classic {
+    border: none;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #FFFFFF;
+    margin: 8px 0;
+}
+
+.rainbow-divider {
+    height: 3px;
+    background: linear-gradient(to right,
+        #FF0000 0%, #FF0000 16%,
+        #FF7700 16%, #FF7700 32%,
+        #FFFF00 32%, #FFFF00 48%,
+        #00BB00 48%, #00BB00 64%,
+        #0000CC 64%, #0000CC 80%,
+        #880088 80%, #880088 100%);
+    margin: 0;
+}
+
+/* ─── TICKER ────────────────────────────────────────────────────── */
+.ticker-wrap {
+    background-color: #000055;
+    padding: 3px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-label {
+    background-color: #CC0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    padding: 2px 7px;
+    margin-right: 8px;
+}
+
+.ticker-text {
+    font-size: 11px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* ─── HIT COUNTER ───────────────────────────────────────────────── */
+.hit-counter {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    background-color: #000000;
+    color: #00FF00;
+    padding: 2px 8px;
+    border: 2px inset #555555;
+    letter-spacing: 3px;
+}
+
+/* ─── FOOTER ────────────────────────────────────────────────────── */
+.site-footer {
+    background-color: #003399;
+    color: #CCCCFF;
+    font-size: 10px;
+    text-align: center;
+    padding: 7px 4px;
+    border-top: 2px solid #6699BB;
+}
+
+.site-footer a { color: #AACCFF; text-decoration: underline; }
+
+/* ─── ADS ───────────────────────────────────────────────────────── */
+.ad-banner-wrap {
+    text-align: center;
+    padding: 5px 0 2px 0;
+    background-color: #DDDDDD;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.ad-banner-top {
+    width: 468px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.ad-slide { display: none; width: 468px; height: 60px; }
+.ad-slide.active { display: block; }
+
+.ad-label {
+    font-size: 9px;
+    color: #888888;
+    margin-top: 2px;
+}
+
+.ad-skyscraper {
+    width: 120px;
+    border: 1px solid #CCCC88;
+}
+
+/* ─── POP-UP OVERLAY ────────────────────────────────────────────── */
+#overlay-backdrop {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 9998;
+}
+
+#popup-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    background-color: #FFFFFF;
+    border: 2px outset #BBBBBB;
+    z-index: 9999;
+}
+
+#popup-titlebar {
+    background: linear-gradient(to right, #000080 0%, #1084D0 100%);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+#popup-close-btn {
+    background-color: #C0C0C0;
+    border: 1px outset #EEEEEE;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    line-height: 14px;
+}
+
+#popup-body {
+    padding: 14px 16px;
+    text-align: center;
+}
+
+/* ─── NEWSPAPER PAGE ────────────────────────────────────────────── */
+.newspaper-masthead {
+    text-align: center;
+    border-bottom: 3px double #000000;
+    border-top: 3px double #000000;
+    padding: 8px 0;
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+.newspaper-name {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #000000;
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+.newspaper-sub {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.newspaper-dateline {
+    font-size: 10px;
+    color: #333333;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 3px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 8px;
+}
+
+.article-kicker {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #336699;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.article-headline {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #000000;
+}
+
+.article-subhead {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #333333;
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+.article-byline {
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #555555;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    padding: 3px 0;
+    margin: 8px 0;
+}
+
+.article-body {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #111111;
+    text-align: justify;
+}
+
+.article-photo-box {
+    background-color: #EEEEEE;
+    border: 1px solid #AAAAAA;
+    text-align: center;
+    padding: 6px;
+}
+
+.caption {
+    font-size: 10px;
+    color: #555555;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    margin-top: 4px;
+}
+
+.print-toolbar {
+    background-color: #F0F0F0;
+    border: 1px solid #CCCCCC;
+    padding: 3px 6px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+/* ─── FORUM PAGE ────────────────────────────────────────────────── */
+.forum-breadcrumb {
+    background-color: #E8EEF8;
+    border: 1px solid #AABBCC;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+}
+
+.forum-thread-hdr {
+    background-color: #003399;
+    color: #FFFFFF;
+    padding: 5px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.forum-stats-row {
+    background-color: #DDE4F0;
+    border-bottom: 1px solid #AABBCC;
+    padding: 3px 8px;
+    font-size: 10px;
+    color: #444444;
+    font-family: Arial, sans-serif;
+}
+
+.post-user-cell {
+    background-color: #DDE4F0;
+    width: 130px;
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: top;
+    border-right: 1px solid #AABBCC;
+}
+
+.post-content-cell {
+    background-color: #FFFFFF;
+    padding: 8px 10px;
+    vertical-align: top;
+}
+
+.post-header {
+    background-color: #BEC8DC;
+    padding: 3px 6px;
+    font-size: 10px;
+    color: #333333;
+    border-bottom: 1px solid #AABBCC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.username  { font-weight: bold; font-size: 12px; color: #003399; }
+.user-rank { font-size: 9px; color: #666666; font-style: italic; }
+.post-meta { font-size: 9px; color: #777777; }
+
+.post-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #CCCCCC;
+    border: 1px solid #999999;
+    margin: 4px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.sig-divider {
+    border-top: 1px dashed #AAAAAA;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 10px;
+    color: #777777;
+    font-style: italic;
+}
+
+.forum-footer-bar {
+    background-color: #DDE4F0;
+    border-top: 1px solid #AABBCC;
+    padding: 5px 8px;
+    font-size: 10px;
+}
+
+/* ─── BLOG PAGE ─────────────────────────────────────────────────── */
+.blog-entry-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003399;
+    font-family: "Times New Roman", Georgia, serif;
+    line-height: 1.2;
+}
+
+.blog-entry-meta {
+    font-size: 10px;
+    color: #888888;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+    margin: 4px 0 10px 0;
+}
+
+.blog-body {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #333333;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.blog-comment {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-left: 3px solid #336699;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    font-size: 11px;
+}
+
+.comment-author { font-weight: bold; color: #003399; font-size: 11px; }
+.comment-date   { font-size: 10px; color: #888888; margin-left: 8px; }
+
+.blog-sidebar-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #666699;
+    padding: 3px 6px;
+    font-family: Arial, sans-serif;
+}
+
+/* ─── CONNECTBOARD (SOCIAL) ─────────────────────────────────────── */
+.cb-header {
+    background: linear-gradient(to right, #FF6600, #FF9900);
+    color: #FFFFFF;
+    font-family: Arial Black, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 6px 10px;
+    letter-spacing: -1px;
+}
+
+.profile-name-hdr {
+    background-color: #FF7700;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 5px 8px;
+}
+
+.profile-pic-box {
+    width: 90px;
+    height: 90px;
+    background-color: #DDDDDD;
+    border: 2px solid #FF7700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.bulletin-box {
+    background-color: #FFFFF0;
+    border: 2px solid #CCCC00;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.bulletin-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #CC6600;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #DDDDAA;
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+}
+
+.testimonial {
+    background-color: #F0F8FF;
+    border: 1px solid #AACCEE;
+    padding: 6px 8px;
+    margin-bottom: 6px;
+    font-size: 11px;
+}
+
+.friends-mini {
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+    font-size: 9px;
+    margin: 2px;
+    vertical-align: top;
+}
+
+.friend-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #CCCCCC;
+    border: 1px solid #999999;
+    margin: 0 auto 2px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* ─── PHARMA AD PAGE ────────────────────────────────────────────── */
+.pharma-hero {
+    background: linear-gradient(to bottom, #E8F4FF 0%, #FFFFFF 60%);
+    text-align: center;
+    padding: 24px 20px 16px 20px;
+}
+
+.drug-name {
+    font-size: 52px;
+    font-weight: 900;
+    color: #003399;
+    font-family: Arial Black, Arial, sans-serif;
+    letter-spacing: -3px;
+}
+
+.drug-name sup {
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.drug-tagline {
+    font-size: 20px;
+    color: #336699;
+    font-style: italic;
+    font-family: "Times New Roman", Georgia, serif;
+    margin-top: 4px;
+}
+
+.drug-class {
+    font-size: 12px;
+    color: #555555;
+    font-family: Arial, sans-serif;
+    margin-top: 2px;
+}
+
+.benefit-list {
+    font-size: 13px;
+    line-height: 2.0;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.benefit-list li::before {
+    content: "✓ ";
+    color: #009900;
+    font-weight: bold;
+}
+
+.cta-box {
+    background-color: #003399;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.cta-main {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFF00;
+}
+
+.cta-sub {
+    font-size: 13px;
+    color: #CCDDFF;
+    margin-top: 4px;
+}
+
+.fine-print {
+    font-size: 9px;
+    color: #666666;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.side-effects-hdr {
+    font-size: 11px;
+    font-weight: bold;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin-bottom: 4px;
+}
+
+/* ─── FORUM THREAD LABELS & POSTS ───────────────────────────────── */
+.forum-thread-label {
+    background-color: #EEF2F8;
+    border-top: 2px solid #336699;
+    border-bottom: 1px solid #AABBCC;
+    padding: 5px 8px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #444466;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+.forum-thread-title-row {
+    background-color: #003399;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.forum-thread-meta {
+    font-weight: normal;
+    font-size: 10px;
+    color: #AACCFF;
+}
+
+.forum-post-table {
+    border-collapse: collapse;
+    margin-bottom: 0;
+    border-color: #AABBCC;
+}
+
+.post-username {
+    font-weight: bold;
+    font-size: 12px;
+    color: #003399;
+    font-family: Arial, sans-serif;
+}
+
+.post-user-meta {
+    font-size: 9px;
+    color: #555566;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-top: 4px;
+}
+
+.post-timestamp {
+    font-size: 10px;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #DDDDEE;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.post-body {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #222222;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.post-body p { margin: 0 0 8px 0; }
+
+.post-sig {
+    font-size: 10px;
+    color: #888888;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    margin-top: 8px;
+}
+
+.post-sig hr { border: none; border-top: 1px dashed #CCCCCC; margin: 4px 0; }
+
+.post-actions {
+    margin-top: 6px;
+    text-align: right;
+}
+
+.btn-forum {
+    background-color: #DDE4F0;
+    border: 1px outset #AABBCC;
+    color: #003399;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    padding: 1px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-forum:hover { background-color: #BBCCDD; color: #003399; }
+
+/* ─── BLOG MASTHEAD & POSTS ─────────────────────────────────────── */
+.blog-masthead {
+    border-bottom: 3px double #336699;
+    margin-bottom: 0;
+}
+
+.blog-title-bar {
+    background-color: #336699;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 6px 12px;
+}
+
+.blog-sub {
+    font-size: 10px;
+    color: #666688;
+    font-family: Arial, sans-serif;
+    padding: 3px 12px 4px 12px;
+    background-color: #EEF0FF;
+    border-bottom: 1px solid #BBBBDD;
+}
+
+.blog-post-block {
+    border: 1px solid #CCCCCC;
+    border-left: 4px solid #336699;
+    margin: 16px 0;
+    padding: 12px 14px;
+    background-color: #FAFAFA;
+}
+
+.blog-meta {
+    font-size: 10px;
+    color: #888888;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+    margin: 4px 0 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+.blog-comments-block {
+    margin-top: 16px;
+    border-top: 2px solid #DDDDDD;
+    padding-top: 10px;
+}
+
+.blog-comments-hdr {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #333366;
+    margin-bottom: 8px;
+}
+
+.blog-comment-author {
+    font-weight: bold;
+    color: #003399;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+}
+
+.blog-comment-date {
+    font-size: 10px;
+    color: #888888;
+    margin-left: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.blog-comment-body {
+    font-size: 11px;
+    color: #333333;
+    line-height: 1.6;
+    font-family: Verdana, Arial, sans-serif;
+    margin-top: 4px;
+}
+
+/* ─── BULLETIN (SOCIAL) COMPONENTS ─────────────────────────────── */
+.bulletin-hdr {
+    background-color: #FFCC00;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #333300;
+}
+
+.bulletin-date {
+    float: right;
+    font-weight: normal;
+    font-size: 10px;
+    color: #665500;
+}
+
+.bulletin-body {
+    padding: 12px 16px;
+    font-size: 13px;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.7;
+    color: #222222;
+}
+
+.bulletin-footer {
+    padding: 5px 16px 8px 16px;
+    font-size: 10px;
+    color: #887700;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #EEEECC;
+}
+
+.bulletin-link {
+    font-size: 10px;
+    color: #CC7700;
+}
+
+.bulletin-reply .bulletin-hdr {
+    background-color: #FFE580;
+    font-style: italic;
+}
+
+/* ─── AD FULL CARD ──────────────────────────────────────────────── */
+.ad-full-card {
+    border-radius: 0;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+/* ─── DEAD LINKS (decorative / non-functional) ──────────────────── */
+/* Targets all href="#" anchors: Print, Email, Share, Reply, Quote,  */
+/* Permalink, Forward, breadcrumbs, footer links, social nav, etc.  */
+a[href="#"] {
+    color: #999999 !important;
+    cursor: default !important;
+    pointer-events: none;
+    text-decoration: none !important;
+}
