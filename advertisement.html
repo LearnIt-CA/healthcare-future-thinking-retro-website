@@ -1,8 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Health Products &amp; Advertisements — HealthNet 2001</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Health Products &amp; Advertisements — HealthNet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=800">
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript">
@@ -30,8 +30,7 @@ window.onload = function() {
     <span class="site-tagline">&nbsp;&nbsp;Your #1 Online Health Resource &bull; Trusted by over 2 Million Canadians</span>
   </td>
   <td align="right" style="padding:8px 12px; vertical-align:middle;">
-    <input type="text" class="search-input" value="Search HealthNet...">
-    &nbsp;<input type="submit" value=" GO " class="btn btn-blue">
+    <form method="GET" action="search.html" style="display:inline;"><input type="text" class="search-input" value="Search HealthNet..."> &nbsp;<input type="submit" value=" GO " class="btn btn-blue"></form>
   </td>
 </tr>
 </table>
@@ -52,20 +51,20 @@ window.onload = function() {
 <!-- BANNER AD -->
 <div class="ad-banner-wrap">
   <div class="ad-banner-top" id="banner-ad">
-    <div class="ad-slide active" style="background:#003366;display:flex;align-items:center;justify-content:center;">
+    <div class="ad-slide active" onclick="location.href='advertisement.html'" style="cursor:pointer;background:#003366;display:flex;align-items:center;justify-content:center;">
       <div style="color:#FFFFFF;text-align:center;font-family:Arial,sans-serif;">
         <div style="font-size:14px;font-weight:bold;color:#FFFF00;">da Vinci&#174; Surgical System &mdash; Now FDA-cleared for general surgery</div>
-        <div style="font-size:10px;color:#AACCFF;">Request a hospital demo &bull; intuitivesurgical.com</div>
+        <div style="font-size:10px;color:#AACCFF;">Request a hospital demo</div>
       </div>
     </div>
-    <div class="ad-slide" style="background:#0033AA;display:flex;align-items:center;justify-content:center;gap:12px;">
+    <div class="ad-slide" onclick="location.href='advertisement.html'" style="cursor:pointer;background:#0033AA;display:flex;align-items:center;justify-content:center;gap:12px;">
       <div style="background:#FFCC00;color:#000080;font-family:Arial Black,sans-serif;font-size:20px;font-weight:900;padding:4px 8px;border-radius:4px;">AOL</div>
       <div style="color:#FFFFFF;">
         <div style="font-size:13px;font-weight:bold;font-family:Arial,sans-serif;">Try AOL 9.0 FREE for 1,000 Hours!</div>
         <div style="font-size:10px;color:#AACCFF;">The World's Most Trusted Internet Service</div>
       </div>
     </div>
-    <div class="ad-slide" style="background:#CC0000;display:flex;align-items:center;justify-content:center;">
+    <div class="ad-slide" onclick="location.href='advertisement.html'" style="cursor:pointer;background:#CC0000;display:flex;align-items:center;justify-content:center;">
       <div style="color:#FFFFFF;text-align:center;">
         <div style="font-size:15px;font-weight:bold;font-family:Arial Black,sans-serif;">Save 70% on Prescription Drugs!</div>
         <div style="font-size:11px;color:#FFFF88;">Licensed Canadian Pharmacy &bull; Safe &bull; Secure</div>
@@ -86,7 +85,7 @@ window.onload = function() {
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- A1: Intuitive Surgical — da Vinci (2000) -->
 <!-- ═══════════════════════════════════════════════════════════ -->
-<div class="ad-full-card" style="background:#00224D;border:3px solid #003399;margin-bottom:24px;overflow:hidden;">
+<div id="a1" class="ad-full-card" style="background:#00224D;border:3px solid #003399;margin-bottom:24px;overflow:hidden;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="200" style="background:#001133;padding:24px 18px;text-align:center;vertical-align:middle;">
@@ -116,11 +115,9 @@ window.onload = function() {
         The surgeon is always in control. The da Vinci makes their hands better.
       </div>
       <div>
-        <span style="background:#0055CC;color:#FFFFFF;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #4488FF;cursor:pointer;display:inline-block;">
+        <a href="https://www.intuitive.com/en-us/products-and-services/da-vinci" target="_blank" style="background:#0055CC;color:#FFFFFF;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #4488FF;cursor:pointer;display:inline-block;text-decoration:none;">
           REQUEST HOSPITAL DEMO &raquo;
-        </span>
-        &nbsp;
-        <span style="color:#AACCFF;font-size:10px;font-family:Arial,sans-serif;">intuitivesurgical.com</span>
+        </a>
       </div>
     </td>
   </tr>
@@ -130,7 +127,7 @@ window.onload = function() {
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- A2: Computer Motion — ZEUS (2001) -->
 <!-- ═══════════════════════════════════════════════════════════ -->
-<div class="ad-full-card" style="background:#1A001A;border:3px solid #660066;margin-bottom:24px;overflow:hidden;">
+<div id="a2" class="ad-full-card" style="background:#1A001A;border:3px solid #660066;margin-bottom:24px;overflow:hidden;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="200" style="background:#0D000D;padding:24px 18px;text-align:center;vertical-align:middle;">
@@ -158,11 +155,9 @@ window.onload = function() {
         "What we proved is that distance is no longer the barrier we thought it was." &mdash; Dr. Marescaux
       </div>
       <div>
-        <span style="background:#660099;color:#FFFFFF;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #9933CC;cursor:pointer;display:inline-block;">
+        <a href="https://en.wikipedia.org/wiki/ZEUS_robotic_surgical_system" target="_blank" style="background:#660099;color:#FFFFFF;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #9933CC;cursor:pointer;display:inline-block;text-decoration:none;">
           LEARN MORE &raquo;
-        </span>
-        &nbsp;
-        <span style="color:#9966CC;font-size:10px;font-family:Arial,sans-serif;">computermotion.com</span>
+        </a>
       </div>
     </td>
   </tr>
@@ -172,7 +167,7 @@ window.onload = function() {
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- A3: Simbionix — LAP Mentor (2004) -->
 <!-- ═══════════════════════════════════════════════════════════ -->
-<div class="ad-full-card" style="background:#0A1F0A;border:3px solid #226622;margin-bottom:24px;overflow:hidden;">
+<div id="a3" class="ad-full-card" style="background:#0A1F0A;border:3px solid #226622;margin-bottom:24px;overflow:hidden;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="200" style="background:#061306;padding:24px 18px;text-align:center;vertical-align:middle;">
@@ -201,11 +196,9 @@ window.onload = function() {
         "Simulation-trained residents reach OR competency with 40% fewer supervised live cases."
       </div>
       <div>
-        <span style="background:#226622;color:#CCFFCC;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #44AA44;cursor:pointer;display:inline-block;">
+        <a href="https://surgicalscience.com/simbionix/" target="_blank" style="background:#226622;color:#CCFFCC;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #44AA44;cursor:pointer;display:inline-block;text-decoration:none;">
           REQUEST DEMO &raquo;
-        </span>
-        &nbsp;
-        <span style="color:#558855;font-size:10px;font-family:Arial,sans-serif;">simbionix.com</span>
+        </a>
       </div>
     </td>
   </tr>
@@ -215,7 +208,7 @@ window.onload = function() {
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- A4: Cisco Healthcare (2005) -->
 <!-- ═══════════════════════════════════════════════════════════ -->
-<div class="ad-full-card" style="background:#001A33;border:3px solid #005588;margin-bottom:24px;overflow:hidden;">
+<div id="a4" class="ad-full-card" style="background:#001A33;border:3px solid #005588;margin-bottom:24px;overflow:hidden;">
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="200" style="background:#000D1A;padding:24px 18px;text-align:center;vertical-align:middle;">
@@ -241,11 +234,9 @@ window.onload = function() {
         The Lindbergh Operation ran on a dedicated fiber link. Now your hospital can have equivalent performance on Cisco infrastructure.
       </div>
       <div>
-        <span style="background:#004488;color:#CCEEFF;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #0077CC;cursor:pointer;display:inline-block;">
+        <a href="https://www.cisco.com/site/ca/en/index.html" target="_blank" style="background:#004488;color:#CCEEFF;font-family:Arial Black,sans-serif;font-size:12px;font-weight:900;padding:6px 16px;border:2px outset #0077CC;cursor:pointer;display:inline-block;text-decoration:none;">
           CONTACT CISCO HEALTHCARE &raquo;
-        </span>
-        &nbsp;
-        <span style="color:#4488AA;font-size:10px;font-family:Arial,sans-serif;">cisco.com/healthcare</span>
+        </a>
       </div>
     </td>
   </tr>
@@ -269,7 +260,7 @@ window.onload = function() {
   <table width="780" cellpadding="0" cellspacing="0"><tr><td align="center">
     <a href="index.html">Home</a> &bull; <a href="newspaper.html">News</a> &bull; <a href="forum.html">Forums</a> &bull; <a href="blog.html">Blog</a> &bull; <a href="social.html">Community</a> &bull; <a href="advertisement.html">Health Products</a>
     <br><br>
-    &copy; 2001&ndash;2005 HealthNet Online, Inc. All Rights Reserved.<br>
+    &copy; 2000 HealthNet Solutions, Inc. All Rights Reserved.<br>
     <i style="font-size:9px;">Best viewed in Internet Explorer 6.0 at 800&times;600 resolution</i>
   </td></tr></table>
 </div>
