@@ -127,7 +127,7 @@ td, th { font-size: 11px; font-family: Verdana, Arial, sans-serif; }
     font-weight: bold;
 }
 
-.btn-blue:hover { background-color: #33CC66; }
+.btn-blue:hover { background-color: #007722; }
 
 .btn-orange {
     background-color: #FF6600;
@@ -135,8 +135,6 @@ td, th { font-size: 11px; font-family: Verdana, Arial, sans-serif; }
     border: 2px outset #FF8833;
     font-weight: bold;
 }
-
-.btn-orange:hover { background-color: #FF8833; }
 
 input[type="submit"], input[type="button"] {
     font-size: 11px;
@@ -288,8 +286,8 @@ hr.classic {
     position: relative;
 }
 
-.ad-slide { display: none !important; width: 468px; height: 60px; }
-.ad-slide.active { display: flex !important; }
+.ad-slide { display: none; width: 468px; height: 60px; }
+.ad-slide.active { display: block; }
 
 .ad-label {
     font-size: 9px;
@@ -847,7 +845,7 @@ hr.classic {
     display: inline-block;
 }
 
-.btn-forum:hover { background-color: #EEF4FF; color: #003399; }
+.btn-forum:hover { background-color: #BBCCDD; color: #003399; }
 
 /* ─── BLOG MASTHEAD & POSTS ─────────────────────────────────────── */
 .blog-masthead {

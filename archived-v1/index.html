@@ -1,0 +1,306 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HealthNet - Your #1 Online Health Resource</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="health, medicine, healthcare, robotic surgery, telesurgery, medical technology">
+<meta name="description" content="HealthNet - Canada's most trusted online health portal. News, forums, expert advice and more.">
+<meta name="viewport" content="width=800">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+window.onload = function() {
+    var slides = document.querySelectorAll('#banner-ad .ad-slide');
+    var idx = 0;
+    if (slides.length > 1) {
+        setInterval(function() {
+            slides[idx].classList.remove('active');
+            idx = (idx + 1) % slides.length;
+            slides[idx].classList.add('active');
+        }, 4500);
+    }
+
+    if (!sessionStorage.getItem('hnPopupShown')) {
+        document.getElementById('overlay-backdrop').style.display = 'block';
+        document.getElementById('popup-overlay').style.display = 'block';
+        sessionStorage.setItem('hnPopupShown', '1');
+    }
+};
+
+function closePopup() {
+    document.getElementById('overlay-backdrop').style.display = 'none';
+    document.getElementById('popup-overlay').style.display = 'none';
+}
+</script>
+</head>
+<body>
+
+<!-- POP-UP (once per session) -->
+<div id="overlay-backdrop" style="display:none;"></div>
+<div id="popup-overlay" style="display:none;">
+  <div id="popup-titlebar">
+    <span>HealthNet - Special Announcement</span>
+    <button id="popup-close-btn" onclick="closePopup()">X</button>
+  </div>
+  <div id="popup-body">
+    <p style="font-size:11px;color:#CC0000;font-weight:bold;font-family:Arial,sans-serif;margin:0 0 6px 0;">*** CONGRATULATIONS! ***</p>
+    <p style="font-size:22px;color:#003399;font-weight:bold;font-family:Arial Black,Arial,sans-serif;margin:0 0 4px 0;">YOU ARE OUR<br>500,000<sup>th</sup> VISITOR!</p>
+    <p style="font-size:11px;font-family:Verdana,sans-serif;margin:8px 0;">
+      Sign up for our <b>FREE HealthNet Newsletter</b> and receive<br>
+      <b>a complimentary copy of "The Internet Health Guide 2003"</b><br>
+      <i>(a $24.99 value, yours FREE!)</i>
+    </p>
+    <table width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td align="center" style="padding:6px;">
+        <input type="text" style="border:1px inset #999;font-size:11px;padding:2px;width:180px;" value="Enter your e-mail address">
+        &nbsp;
+        <span class="btn btn-orange" onclick="closePopup()" style="cursor:pointer;font-size:11px;padding:3px 12px;">DISMISS</span>
+      </td>
+    </tr></table>
+    <p style="font-size:9px;color:#888888;font-family:Arial,sans-serif;margin:6px 0 0 0;">
+      No spam. Unsubscribe anytime. <a href="javascript:void(0)" onclick="closePopup()" style="color:#666666;">No thanks, close this window.</a>
+    </p>
+  </div>
+</div>
+
+<div class="main-container">
+
+<!-- MASTHEAD -->
+<table width="780" border="0" cellpadding="0" cellspacing="0" class="masthead-bg">
+<tr>
+  <td style="padding:10px 12px;">
+    <span class="site-title">Health<font color="#FFCC00">Net</font></span><br>
+    <span class="site-tagline">&nbsp;&nbsp;Your #1 Online Health Resource &bull; Trusted by over 2 Million Canadians</span>
+  </td>
+  <td align="right" style="padding:8px 12px;vertical-align:middle;">
+    <form method="GET" action="search.html" style="display:inline;"><input type="text" class="search-input" value="Search HealthNet..."> &nbsp;<input type="submit" value=" GO " class="btn btn-blue"></form><br>
+    <span style="font-size:9px;color:#AACCFF;">
+      [<a href="#" style="color:#AACCFF;">Register FREE</a>]
+      [<a href="#" style="color:#AACCFF;">Sign In</a>]
+    </span>
+  </td>
+</tr>
+</table>
+
+<!-- NAV -->
+<table width="780" border="0" cellpadding="0" cellspacing="0" class="nav-bar-bg">
+<tr>
+  <td class="nav-cell-active"><span>HOME</span></td>
+  <td class="nav-cell"><a href="newspaper.html">NEWS</a></td>
+  <td class="nav-cell"><a href="forum.html">FORUMS</a></td>
+  <td class="nav-cell"><a href="blog.html">BLOG</a></td>
+  <td class="nav-cell"><a href="social.html">COMMUNITY</a></td>
+  <td class="nav-cell"><a href="advertisement.html">HEALTH PRODUCTS</a></td>
+  <td width="100%" bgcolor="#336699">&nbsp;</td>
+</tr>
+</table>
+
+<!-- BANNER AD -->
+<div class="ad-banner-wrap">
+  <div class="ad-banner-top" id="banner-ad">
+    <div class="ad-slide active" onclick="location.href='advertisement.html'" style="cursor:pointer;background:#003366;display:flex;align-items:center;justify-content:center;">
+      <div style="color:#FFFFFF;text-align:center;font-family:Arial,sans-serif;">
+        <div style="font-size:14px;font-weight:bold;color:#FFFF00;">da Vinci&#174; Surgical System &mdash; Now FDA-cleared for general surgery</div>
+      </div>
+    </div>
+    <div class="ad-slide" onclick="location.href='advertisement.html'" style="cursor:pointer;background:#0033AA;display:flex;align-items:center;justify-content:center;gap:12px;">
+      <div style="background:#FFCC00;color:#000080;font-family:Arial Black,sans-serif;font-size:20px;font-weight:900;padding:4px 8px;border-radius:4px;">AOL</div>
+      <div style="color:#FFFFFF;">
+        <div style="font-size:13px;font-weight:bold;font-family:Arial,sans-serif;">Try AOL 9.0 FREE for 1,000 Hours!</div>
+        <div style="font-size:10px;color:#AACCFF;">The World's Most Trusted Internet Service</div>
+      </div>
+    </div>
+    <div class="ad-slide" onclick="location.href='advertisement.html'" style="cursor:pointer;background:#CC0000;display:flex;align-items:center;justify-content:center;">
+      <div style="color:#FFFFFF;text-align:center;">
+        <div style="font-size:15px;font-weight:bold;font-family:Arial Black,sans-serif;">Save 70% on Prescription Drugs!</div>
+        <div style="font-size:11px;color:#FFFF88;">Licensed Canadian Pharmacy &bull; Safe &bull; Secure</div>
+      </div>
+    </div>
+  </div>
+  <div class="ad-label">Advertisement</div>
+</div>
+
+<div class="rainbow-divider"></div>
+
+<!-- MAIN 2-COLUMN LAYOUT -->
+<table width="780" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+
+  <!-- CENTER COLUMN -->
+  <td width="510" style="padding:10px 12px;border-right:1px solid #CCCCCC;">
+
+    <!-- FEATURED STORY -->
+    <div style="margin-bottom:14px;">
+      <div style="font-size:10px;text-transform:uppercase;color:#CC0000;font-weight:bold;letter-spacing:1px;font-family:Arial,sans-serif;">
+        &#9658; SPECIAL REPORT
+      </div>
+      <div class="headline-main" style="font-size:20px;margin-top:4px;line-height:1.2;">
+        <a href="newspaper.html#n2" style="color:#003399;text-decoration:none;">Surgeon in New York Operates on Patient in France Without Leaving His Chair</a>
+      </div>
+      <div class="story-date">The New York Times &bull; September 9, 2001 &bull; Carol Marin, Science Desk</div>
+      <hr class="classic">
+      <p class="story-blurb">
+        In a procedure surgeons are calling the "Lindbergh Operation," a team led by Dr. Jacques Marescaux removed a gallbladder from a patient in Strasbourg, France, while Dr. Marescaux sat at a robotic control console in Manhattan. The operation took 54 minutes. The patient was discharged two days later with no complications.
+      </p>
+      <p class="story-blurb">
+        Not everyone shares the enthusiasm. "One successful procedure over a purpose-built private cable is a long way from a clinical reality," said Dr. Patricia Wells, chair of surgery at Columbia University Medical Center.
+      </p>
+      <p><a href="newspaper.html#n2"><b>Read the full story &raquo;</b></a></p>
+    </div>
+
+    <hr class="classic">
+    <div class="section-hdr" style="margin-bottom:10px;">MORE HEALTH TECHNOLOGY NEWS</div>
+
+    <!-- Story: N1 -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:12px;"><tr valign="top">
+      <td>
+        <div class="headline-sub"><a href="newspaper.html#n1">FDA Clears First Robotic System for General Surgery</a></div>
+        <div class="story-date">The Globe and Mail &bull; July 14, 2000</div>
+        <div class="story-blurb">The FDA granted clearance to the da Vinci Surgical System for laparoscopic surgery, marking the first fully integrated robotic platform approved for broad surgical use. The $1.5 million price tag draws immediate questions about access.</div>
+        <div style="margin-top:4px;"><a href="newspaper.html#n1" style="font-size:10px;">Read more &raquo;</a></div>
+      </td>
+    </tr></table>
+
+    <!-- Story: N3 -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:12px;"><tr valign="top">
+      <td>
+        <div class="headline-sub"><a href="newspaper.html#n3">Robotic System Used to Remove 60% of a Patient's Liver in Four Incisions</a></div>
+        <div class="story-date">The Lancet, News &amp; Views &bull; October 12, 2005</div>
+        <div class="story-blurb">A team at the University of Illinois Hospital performed a successful robotic-assisted right hepatectomy through four sub-centimetre incisions. The patient was discharged on day four. Critics note the gap between a landmark case and reproducible practice.</div>
+        <div style="margin-top:4px;"><a href="newspaper.html#n3" style="font-size:10px;">Read more &raquo;</a></div>
+      </td>
+    </tr></table>
+
+    <!-- Story: N4 -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:12px;"><tr valign="top">
+      <td>
+        <div class="headline-sub"><a href="newspaper.html#n4">The Surgeon of the Future Might Never Enter the Operating Room</a></div>
+        <div class="story-date">Wired Magazine &bull; March 18, 2004</div>
+        <div class="story-blurb">Researchers at MIT and Stanford are working to close the three remaining barriers to viable telesurgery: latency, haptic feedback, and infrastructure cost. Others warn that "five years away" has been the forecast for five years running.</div>
+        <div style="margin-top:4px;"><a href="newspaper.html#n4" style="font-size:10px;">Read more &raquo;</a></div>
+      </td>
+    </tr></table>
+
+    <div style="background:#FFFFEE;border:1px dashed #CCCC88;padding:4px 8px;font-size:10px;font-family:Arial,sans-serif;color:#555555;">
+      <b>Sponsored:</b> Simbionix LAP Mentor&#8482; surgical simulator &mdash; 35+ procedures, haptic feedback.
+      <a href="advertisement.html" style="color:#0000CC;">Learn more &raquo;</a>
+    </div>
+
+  </td>
+
+  <!-- RIGHT SIDEBAR -->
+  <td width="250" style="padding:8px 10px;">
+
+    <!-- HOT FORUM TOPICS -->
+    <div class="sidebar-box" style="margin-bottom:8px;">
+      <div class="section-hdr-dark">HOT FORUM TOPICS</div>
+      <table width="100%" cellpadding="5" cellspacing="0">
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="forum.html#f1">Surgical Simulation: Are Video Game Controls the Future of Training?</a><br>
+          <span style="color:#888;font-size:9px;">MedStudentLife.net &bull; 5 replies &bull; futuremed_kira</span>
+        </td></tr>
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="forum.html#f2">DARPA Built This Technology &mdash; But Who Pays for the Cable?</a><br>
+          <span style="color:#888;font-size:9px;">Slashdot.org &bull; 4 replies &bull; bandwidth_hawk</span>
+        </td></tr>
+        <tr><td style="font-size:10px;line-height:1.4;">
+          <a href="forum.html#f3">Is the da Vinci System Worth $1.5 Million? Or Is This Just Marketing?</a><br>
+          <span style="color:#888;font-size:9px;">HealthcareIT.net &bull; 4 replies &bull; budget_blade</span>
+        </td></tr>
+      </table>
+    </div>
+
+    <!-- LATEST FROM THE BLOG -->
+    <div class="sidebar-box" style="margin-bottom:8px;">
+      <div class="section-hdr">LATEST FROM THE BLOG</div>
+      <table width="100%" cellpadding="5" cellspacing="0">
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="blog.html#b1">Why Video Game Kids Will Be Better Surgeons Than Me</a><br>
+          <span style="color:#888;font-size:9px;">Dr. A. Reeves &bull; FutureMed.blogspot.com &bull; Feb 2003</span>
+        </td></tr>
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="blog.html#b2">Haptic Feedback: The Missing Piece in Robotic Surgery</a><br>
+          <span style="color:#888;font-size:9px;">K. Bauer &bull; IEEESpectrum.org &bull; Mar 2004</span>
+        </td></tr>
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="blog.html#b3">Robots in the OR: Why I'm Not Worried</a><br>
+          <span style="color:#888;font-size:9px;">Dr. W. Hartley &bull; SkepticalScalpel.com &bull; Aug 2003</span>
+        </td></tr>
+        <tr><td style="font-size:10px;line-height:1.4;">
+          <a href="blog.html#b4">Why Patients Will Never Fully Accept a Robot</a><br>
+          <span style="color:#888;font-size:9px;">Prof. C. Alderton &bull; MedEthics.org &bull; Nov 2004</span>
+        </td></tr>
+      </table>
+    </div>
+
+    <!-- COMMUNITY BUZZ -->
+    <div class="sidebar-box" style="margin-bottom:8px;">
+      <div class="section-hdr" style="background:#FF8800;">&#128227; COMMUNITY BUZZ</div>
+      <table width="100%" cellpadding="5" cellspacing="0">
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="social.html#t1">@MarcescauxSurg: "Surgery without borders is no longer science fiction."</a><br>
+          <span style="color:#888;font-size:9px;">&#128257; 312 &nbsp; &#10084; 891 &bull; Sep 2001</span>
+        </td></tr>
+        <tr style="border-bottom:1px solid #EEEEEE;"><td style="font-size:10px;line-height:1.4;">
+          <a href="social.html#t8">@ResidentRealTalk: "The da Vinci sits idle 60% of the time. The training gap is going to limit adoption as much as cost."</a><br>
+          <span style="color:#888;font-size:9px;">&#128257; 201 &nbsp; &#10084; 876 &bull; May 2005</span>
+        </td></tr>
+        <tr><td style="font-size:10px;line-height:1.4;">
+          <a href="social.html#t5">@GHWatch: "1 surgeon per 100,000 in sub-Saharan Africa. Nobody in this conversation is talking about the equity implications."</a><br>
+          <span style="color:#888;font-size:9px;">&#128257; 54 &nbsp; &#10084; 143 &bull; Aug 2005</span>
+        </td></tr>
+      </table>
+    </div>
+
+    <!-- HEALTH PRODUCTS -->
+    <div class="sidebar-box">
+      <div class="section-hdr-dark">HEALTH PRODUCTS</div>
+      <div style="padding:6px 8px;text-align:center;background:#FFF8E8;border-bottom:1px solid #CCCC88;font-family:Arial,sans-serif;">
+        <div style="font-size:13px;font-weight:900;color:#003399;font-family:Arial Black,sans-serif;">da Vinci&#174;</div>
+        <div style="font-size:9px;color:#336699;font-style:italic;">Surgical System</div>
+        <div style="font-size:9px;color:#555555;margin:3px 0;">FDA-cleared robotic surgery platform</div>
+        <a href="advertisement.html" style="background:#003399;color:#FFFFFF;font-size:9px;padding:2px 8px;text-decoration:none;font-family:Arial,sans-serif;display:inline-block;margin-top:3px;">Learn More</a>
+      </div>
+      <div style="padding:6px 8px;text-align:center;background:#E8F4FF;font-family:Arial,sans-serif;">
+        <div style="font-size:11px;font-weight:bold;color:#226622;">Simbionix LAP Mentor&#8482;</div>
+        <div style="font-size:9px;color:#333333;margin:2px 0;">Surgical simulation training</div>
+        <a href="advertisement.html" style="background:#226622;color:#FFFFFF;font-size:9px;padding:2px 8px;text-decoration:none;font-family:Arial,sans-serif;display:inline-block;margin-top:3px;">View Products</a>
+      </div>
+    </div>
+
+  </td>
+</tr>
+</table>
+
+<div class="rainbow-divider"></div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <span class="ticker-label">HEALTH NEWS</span>
+  <marquee class="ticker-text" behavior="scroll" direction="left" scrollamount="3">
+    &nbsp;&nbsp;&bull;&nbsp;&nbsp; FDA clears da Vinci robotic system for general surgery &bull; Lindbergh Operation: first transatlantic surgery completed Sept. 2001 &bull; Robotic liver resection performed at University of Illinois &bull; Surgical simulation reduces resident errors by 37% in Vanderbilt study &bull; DARPA Trauma Pod targets semi-autonomous battlefield surgery by 2010 &bull; Sub-Saharan Africa: 1 surgeon per 100,000 people &nbsp;&nbsp;
+  </marquee>
+</div>
+
+<!-- FOOTER -->
+<div class="site-footer">
+  <table width="780" cellpadding="0" cellspacing="0"><tr><td align="center">
+    <a href="index.html">Home</a> &bull;
+    <a href="newspaper.html">News</a> &bull;
+    <a href="forum.html">Forums</a> &bull;
+    <a href="blog.html">Blog</a> &bull;
+    <a href="social.html">Community</a> &bull;
+    <a href="advertisement.html">Health Products</a> &bull;
+    <a href="#">Privacy Policy</a> &bull;
+    <a href="#">Contact Us</a>
+    <br><br>
+    You are visitor number: <span class="hit-counter">1&nbsp;482&nbsp;097</span>
+    <br><br>
+    <b>HealthNet</b> is for informational purposes only and does not constitute medical advice.<br>
+    &copy; 2000 HealthNet Solutions, Inc. All Rights Reserved.<br>
+    <i style="font-size:9px;">Best viewed in Internet Explorer 6.0 at 800&times;600 resolution</i>
+  </td></tr></table>
+</div>
+
+</div>
+</body>
+</html>
